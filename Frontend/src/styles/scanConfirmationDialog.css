@@ -1,0 +1,165 @@
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog-content {
+  background: #2B0F4D; /* Темно-фиолетовый фон */
+  padding: 25px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  color: #EFC18F; /* Золотистый цвет текста */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dialog-content h2 {
+  color: #EFC18F;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.image-previews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #49426E; /* Более светлый фиолетовый для рамки */
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.image-preview-item {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border: 1px solid #EFC18F;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.image-preview-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remove-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(255, 0, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.scan-dialog-button {
+  background: #49426E; /* Более светлый фиолетовый */
+  color: #EFC18F;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background 0.2s ease;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.scan-dialog-button:hover {
+  background: #5B528A; /* Немного темнее при наведении */
+}
+
+.scan-dialog-button:disabled {
+  background: #3a325d;
+  color: #8c82a5;
+  cursor: not-allowed;
+}
+
+.add-more-button {
+  background: #EFC18F; /* Золотистый фон */
+  color: #2B0F4D; /* Темно-фиолетовый текст */
+  margin-top: 10px;
+}
+
+.add-more-button:hover {
+  background: #FFD700; /* Более яркий золотистый при наведении */
+}
+
+.dialog-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+
+.cancel-button {
+  background: #6C757D; /* Серый цвет для отмены */
+}
+
+.cancel-button:hover {
+  background: #5A6268;
+}
+
+.progress-container {
+  margin-top: 20px;
+  text-align: center;
+  color: #EFC18F;
+}
+
+.progress-bar-background {
+  width: 100%;
+  background-color: #49426E;
+  border-radius: 10px;
+  height: 25px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #EFC18F; /* Цвет прогресса */
+  width: 0%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2B0F4D; /* Темный текст на прогрессе */
+  font-weight: bold;
+  transition: width 0.3s ease-in-out;
+} 

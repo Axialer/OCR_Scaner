@@ -1,0 +1,79 @@
+/* header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  background: #49426E;
+  color: white;
+  box-sizing: border-box;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container h1 {
+  color: #EFC18F; /* Устанавливаем цвет текста для заголовка */
+  margin: 0; /* Убираем стандартные отступы у h1 */
+  font-size: 1.5em; /* Примерный размер шрифта, можно настроить */
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  background: #2B0F4D;
+  padding: 10px 15px;
+  border-radius: 12px;
+  min-width: 60px;
+  box-sizing: border-box;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px; /* Уменьшаем отступы для мобильных */
+  }
+
+  .logo {
+    width: 60px; /* Уменьшаем размер логотипа */
+  }
+
+  .user-profile {
+    padding: 8px 12px; /* Уменьшаем отступы профиля */
+    min-width: 50px;
+  }
+
+  .avatar {
+    width: 28px; /* Уменьшаем размер аватара */
+    height: 28px;
+  }
+}
+
+/* Медиа-запрос для планшетов */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    padding: 20px 30px;
+  }
+}
+
+/* Медиа-запрос для десктопов */
+@media (min-width: 1025px) {
+  .header {
+    padding: 20px 5%;
+  }
+}

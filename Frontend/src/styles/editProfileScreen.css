@@ -1,0 +1,196 @@
+.edit-profile-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #EFC18F;
+}
+
+/* Стили для кнопки Назад (можно переиспользовать из documentDetailScreen.css, если они одинаковые) */
+.back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    font-size: 24px;
+    color: #EFC18F;
+    line-height: 1;
+}
+
+h2 {
+    color: #EFC18F;
+    margin-top: 0;
+}
+
+/* Стили для блока изменения фото */
+.photo-block {
+  background: #2B0F4D; /* Цвет фона блока */
+  border-radius: 10px; /* Скругленные углы */
+  padding: 15px; /* Внутренние отступы */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #2B0F4D; /* Добавляем тонкую рамку */
+}
+
+.avatar-edit {
+  width: 80px; /* Увеличиваем размер аватара */
+  height: 80px;
+  border-radius: 50%;
+  background-color: #2B0F4D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.avatar-edit img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.change-photo-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #EFC18F; /* Цвет текста */
+}
+
+.change-photo-text .icon {
+  font-size: 2em; /* Размер иконки камеры */
+}
+
+.change-photo-text .text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.change-photo-text .title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.change-photo-text .description {
+  font-size: 0.8em;
+  color: #ccc; /* Более тусклый цвет для описания */
+}
+
+
+/* Стили для блока данных пользователя */
+.user-info-block {
+  background: #2B0F4D; /* Цвет фона блока */
+  border-radius: 10px; /* Скругленные углы */
+  padding: 15px; /* Внутренние отступы */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Отступ между строками данных */
+  border: 1px solid #2B0F4D; /* Добавляем тонкую рамку */
+}
+
+.info-item {
+  display: flex;
+  gap: 10px;
+  font-size: 1.1em;
+}
+
+.info-item .label {
+  font-weight: bold;
+  color: #EFC18F; /* Цвет заголовка (Name, Mail) */
+}
+
+.info-item .value {
+  color: #ccc; /* Цвет значения (Aboba, email) */
+}
+
+.processed-files-button {
+  background: #5A4F7F; /* Цвет фона кнопки как на скриншоте */
+  color: #FFFFFF; /* Цвет текста кнопки - белый */
+  border: none;
+  border-radius: 8px; /* Скругление углов как на скриншоте */
+  padding: 12px 20px; /* Внутренние отступы */
+  cursor: pointer;
+  font-size: 1em;
+  align-self: flex-start; /* Выравнивание кнопки по левому краю */
+  margin-top: 10px; /* Отступ сверху */
+  /* Добавляем легкую тень для объема, как на кнопках */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.processed-files-button:hover {
+    background-color: #6a5f8f; /* Цвет фона при наведении */
+}
+
+
+/* Стили для блока облачных хранилищ */
+.cloud-storage-block {
+  background: #2B0F4D; /* Цвет фона блока */
+  border-radius: 10px; /* Скругленные углы */
+  padding: 15px; /* Внутренние отступы */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Отступ между заголовком и списком */
+  border: 1px solid #2B0F4D; /* Добавляем тонкую рамку */
+}
+
+.cloud-storage-block h3 {
+  margin: 0;
+  color: #EFC18F;
+  font-size: 1.3em;
+}
+
+.cloud-storage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Отступ между пунктами списка */
+}
+
+.cloud-storage-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cloud-icon {
+  width: 30px; /* Размер иконки облака */
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0; /* Запрещаем сжимать иконку */
+}
+
+/* Заглушки для иконок облачных сервисов (замените на реальные изображения или SVG) */
+.cloud-icon.google-drive {
+  background-image: url('https://www.gstatic.com/images/branding/product/1x/drive_2020q4_48dp.png'); /* Пример иконки Google Drive */
+}
+
+.cloud-icon.dropbox {
+   background-image: url('https://www.dropbox.com/static/images/favicon.ico'); /* Пример иконки Dropbox */
+}
+
+.cloud-icon.onedrive {
+   background-image: url('https://img.icons8.com/color/48/000000/onedrive.png'); /* Пример иконки OneDrive */
+}
+
+
+.service-name {
+  flex-grow: 1; /* Позволяет названию сервиса занимать оставшееся пространство */
+  color: #EFC18F;
+}
+
+.link-account {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #EFC18F; /* Цвет текста ссылки */
+  text-decoration: underline; /* Подчеркивание как на скриншоте */
+  font-size: 1em;
+}
+
+/* Добавьте стили для формы и полей ввода здесь */ 

@@ -1,0 +1,36 @@
+/* bottomNav.css */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background: #2B0F4D;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-sizing: border-box;
+  margin: 0;
+  z-index: 100;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.nav-item img {
+  width: 24px;
+  margin-bottom: 5px;
+}
+
+.active {
+  border-top: 2px solid #FFD700;
+  padding-top: 10px;
+}

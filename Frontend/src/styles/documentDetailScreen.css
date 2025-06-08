@@ -1,0 +1,134 @@
+.document-detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Отступ между секциями */
+  color: #EFC18F; /* Цвет текста */
+}
+
+/* Стили для кнопки Назад */
+.back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 10px; /* Отступ под кнопкой */
+    align-self: flex-start; /* Выравнивание по левому краю */
+    font-size: 24px; /* Размер текстовой стрелки */
+    color: #EFC18F; /* Цвет текстовой стрелки */
+    line-height: 1; /* Убираем лишний интерлиньяж */
+}
+
+/* Удаляем стили для img внутри back-button, так как мы используем текст */
+/* .back-button img {
+    width: 24px;
+    height: auto;
+    filter: invert(1);
+} */
+
+.document-detail-container h2 {
+  font-size: 1.8em;
+  color: #EFC18F;
+  margin-bottom: 5px;
+  /* Стили для переноса длинного названия файла */
+  word-wrap: break-word; /* Перенос слов, если они слишком длинные */
+  overflow-wrap: break-word; /* Стандартное свойство для переноса слов */
+  word-break: break-word; /* Принудительный перенос внутри слов, если необходимо */
+}
+
+.document-date {
+  font-size: 0.9em;
+  color: #ccc; /* Более тусклый цвет для даты */
+  margin-bottom: 15px;
+}
+
+.document-image-container {
+  width: 100%;
+  max-width: 400px; /* Максимальная ширина изображения */
+  height: auto;
+  background: #49426E;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto; /* Выравнивание по центру */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px; /* Минимальная высота контейнера изображения */
+}
+
+.document-image {
+  display: block; /* Убираем лишние отступы под изображением */
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; /* Масштабируем изображение, чтобы оно полностью помещалось */
+}
+
+.placeholder-image {
+  font-size: 1em;
+  text-align: center;
+  color: #EFC18F;
+  padding: 20px;
+}
+
+/* Стили для контейнера заголовка и кнопки копирования */
+.recognized-text-header {
+    display: flex; /* Используем flexbox для выравнивания */
+    align-items: center; /* Выравниваем элементы по центру вертикали */
+    gap: 10px; /* Отступ между заголовком и кнопкой */
+    margin-bottom: 10px; /* Отступ под этим блоком */
+}
+
+.recognized-text-header h3 {
+    font-size: 1.3em;
+    color: #EFC18F;
+    margin: 0; /* Убираем стандартный margin у h3 */
+}
+
+/* Стили для кнопки копирования */
+.copy-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px; /* Увеличиваем область клика */
+    color: #EFC18F; /* Цвет иконки */
+    font-size: 1.2em; /* Размер иконки */
+    line-height: 1;
+    display: flex; /* Для центрирования символа */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для сообщения о копировании */
+.copied-message {
+    font-size: 0.9em;
+    color: #8FBC8F; /* Зеленоватый цвет для сообщения */
+    margin-left: 10px; /* Отступ слева от кнопки */
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Плавное исчезновение */
+}
+
+/* Стили для блока с распознанным текстом */
+.recognized-text-block {
+  background: #2B0F4D;
+  border-radius: 10px;
+  padding: 15px;
+  white-space: pre-wrap; /* Сохраняем переносы строк в тексте */
+  word-wrap: break-word; /* Перенос длинных слов */
+  color: #EFC18F;
+  flex-grow: 1; /* Позволяет блоку занимать доступное пространство */
+  /* Убедитесь, что здесь нет фиксированной высоты или overflow: hidden */
+
+  /* Добавляем внешний отступ снизу, чтобы учесть нижнее меню */
+  margin-bottom: 80px; /* Подберите это значение, чтобы оно было больше высоты нижнего меню */
+  /* padding-bottom: 80px; /* Удаляем или комментируем предыдущий padding-bottom */ 
+}
+
+.recognized-text-block p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Стили для ссылки, чтобы убрать подчеркивание */
+.history-item-link {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Наследуем цвет текста от родителя */
+}

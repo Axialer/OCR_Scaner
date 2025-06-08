@@ -1,0 +1,60 @@
+/* proPower.css */
+.pro-power {
+  background: #EFC18F; /* Меняем цвет фона с желтого на #EFC18F */
+  padding: 25px; /* Отступы внутри блока */
+  border-radius: 15px; /* Закругление углов */
+  position: relative;
+  margin: 20px 0; /* Отступ сверху и снизу */
+  width: 100%; /* Ширина равна ширине контейнера */
+  min-height: 160px; /* Минимальная высота блока */
+  box-sizing: border-box; /* Учитываем padding в ширине */
+  display: flex; /* Используем Flexbox для размещения элементов */
+  justify-content: space-between; /* Размещаем элементы по краям */
+  align-items: center; /* Выравниваем элементы по вертикали */
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column; /* Элементы размещаются вертикально */
+  align-items: flex-start; /* Выравниваем по левому краю */
+}
+
+.pro-power h2 {
+  font-size: 1.5em; /* Размер заголовка */
+  margin-bottom: 10px; /* Отступ между заголовком и ценой */
+  color: #2B0F4D; /* Цвет текста */
+}
+
+.price-container {
+  display: flex;
+  align-items: baseline; /* Выравниваем базовые линии текста */
+  margin-bottom: 15px; /* Отступ между ценой и кнопкой */
+}
+
+.dollar {
+  font-size: 1.5em; /* Размер символа доллара */
+  margin-right: -5px; /* Слегка сдвигаем знак доллара */
+  color: #2B0F4D; /* Цвет текста */
+}
+
+.amount {
+  font-size: 3em; /* Размер суммы */
+  font-weight: bold;
+  color: #2B0F4D; /* Цвет текста */
+}
+
+.buy-button {
+  background: #2B0F4D; /* Темный фон */
+  border: none;
+  padding: 12px 25px; /* Отступы внутри кнопки */
+  border-radius: 10px; /* Закругление углов */
+  cursor: pointer;
+  font-weight: bold;
+  color: white; /* Цвет текста */
+  margin-top: 10px; /* Отступ сверху */
+}
+
+.crown {
+  width: 150px; /* Размер короны */
+  height: auto; /* Автоматическая высота */
+}

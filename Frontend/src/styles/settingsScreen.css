@@ -1,0 +1,160 @@
+/* src/styles/settingsScreen.css */
+
+/* Стили для контейнера экрана настроек */
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Отступ между основными секциями */
+  color: #EFC18F; /* Основной цвет текста */
+}
+
+/* Стили для блока профиля пользователя */
+.profile-block {
+  background: #49426E; /* Цвет фона блока */
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Отступ между аватаром и информацией */
+}
+
+/* Стили для аватара ТОЛЬКО внутри settings-container */
+.settings-container .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Круглый аватар */
+  background-color: #2B0F4D; /* Цвет фона, если нет изображения */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Скрываем части изображения, выходящие за круг */
+  flex-shrink: 0; /* Запрещаем сжимать аватар во flex-контейнере */
+}
+
+.settings-container .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Масштабируем изображение, чтобы оно покрывало контейнер */
+}
+
+.user-info {
+  flex-grow: 1; /* Позволяет информации пользователя занимать оставшееся пространство */
+}
+
+.user-info h3 {
+  margin: 0 0 5px 0; /* Отступ снизу */
+  font-size: 1.4em;
+  color: #EFC18F;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #ccc; /* Более тусклый цвет для email */
+}
+
+.edit-profile-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #EFC18F; /* Цвет текста кнопки */
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Отступ между иконкой и текстом */
+}
+
+.edit-profile-button span {
+    font-size: 1.2em; /* Размер иконки карандаша */
+}
+
+
+/* Стили для списка настроек */
+.settings-list {
+  background: #49426E; /* Цвет фона блока */
+  border-radius: 10px;
+  overflow: hidden; /* Для скругления углов у первого и последнего элемента списка */
+}
+
+.settings-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #2B0F4D; /* Разделитель между пунктами */
+  cursor: pointer;
+  color: #EFC18F;
+  font-size: 1.1em;
+}
+
+.settings-item:last-child {
+  border-bottom: none; /* Убираем разделитель у последнего элемента */
+}
+
+.settings-item .icon {
+  margin-right: 15px; /* Отступ справа от иконки */
+  font-size: 1.3em; /* Размер иконки */
+}
+
+.settings-item .text {
+  flex-grow: 1; /* Позволяет тексту занимать оставшееся пространство */
+}
+
+.settings-item .arrow {
+  font-size: 1.3em; /* Размер стрелки */
+  color: #ccc; /* Цвет стрелки */
+}
+
+h2 {
+    color: #EFC18F;
+    margin-top: 0;
+}
+
+.settings-option {
+  background: #49426E; /* Цвет фона опции */
+  border-radius: 10px; /* Скругленные углы */
+  padding: 15px; /* Внутренние отступы */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer; /* Курсор-указатель при наведении */
+  transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.settings-option:hover {
+  background-color: #5A4F7F; /* Цвет фона при наведении */
+}
+
+.option-icon {
+  font-size: 1.5em; /* Размер иконки */
+  flex-shrink: 0; /* Запрещаем сжимать иконку */
+}
+
+.option-text {
+  flex-grow: 1; /* Позволяет тексту занимать оставшееся пространство */
+  font-size: 1.1em;
+}
+
+.arrow-icon {
+  font-size: 1.5em; /* Размер стрелки */
+  color: #EFC18F; /* Цвет стрелки */
+}
+
+/* Стили для кнопки выхода из аккаунта */
+.logout-button {
+  background: #D32F2F; /* Красный цвет для кнопки выхода */
+  color: #FFFFFF; /* Белый цвет текста */
+  border: none;
+  border-radius: 8px; /* Скругленные углы */
+  padding: 12px 20px; /* Внутренние отступы */
+  cursor: pointer;
+  font-size: 1em;
+  align-self: center; /* Выравнивание по центру контейнера */
+  margin-top: 30px; /* Отступ сверху, чтобы отделить от других опций */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Легкая тень */
+  transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.logout-button:hover {
+    background-color: #c62828; /* Более темный красный при наведении */
+} 

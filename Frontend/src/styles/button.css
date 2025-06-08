@@ -1,0 +1,41 @@
+/* Общие стили для кнопок */
+.load-button,
+.scan-button {
+    background: #2B0F4D;
+    border: none;
+    padding: 30px; /* Увеличиваем padding */
+    margin-bottom: 15px; /* Уменьшаем отступ между кнопками */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #EFC18F; /* Меняем цвет всего текста на кнопках */
+    cursor: pointer;
+    border-radius: 15px; /* Добавляем радиус углов */
+    width: 100%; /* Ширина кнопок равна ширине блока Pro Power */
+    min-height: 140px; /* Увеличиваем минимальную высоту */
+    box-sizing: border-box; /* Учитываем padding в ширине */
+}
+
+/* Стили для заголовков внутри кнопок */
+.load-button h2,
+.scan-button h2 {
+    font-size: 2em; /* Увеличиваем размер заголовка */
+    margin-bottom: 8px; /* Уменьшаем отступ */
+    margin-left: 20px; /* Отступ слева */
+    color: #EFC18F; /* Явно указываем цвет для заголовков */
+}
+
+/* Стили для описательного текста внутри кнопок */
+.load-button p,
+.scan-button p {
+    font-size: 1.1em; /* Увеличиваем размер описательного текста */
+    color: #EFC18F; /* Цвет для описательного текста */
+    margin-left: 20px; /* Отступ слева */
+}
+
+/* Стили для иконок внутри кнопок */
+.button-icon {
+    width: 80px; /* Увеличиваем размер иконки */
+    height: auto;
+    margin-right: 20px; /* Отступ справа */
+}
