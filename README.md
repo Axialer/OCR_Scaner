@@ -163,8 +163,8 @@
 Проект имеет следующую структуру каталогов:
 
 ```
-ocr-scanner/
-├── Backend/                       # Серверная часть приложения (находится в директории `back/`)
+Neuro-Scan/
+├── Backend/                       # Серверная часть приложения
 │   ├── src/                    # Исходный код бэкенда
 │   │   ├── config/             # Настройки приложения (БД, проекта)
 │   │   │   └── database/
@@ -180,19 +180,25 @@ ocr-scanner/
 │   │   └── __init__.py
 │   ├── main.py                 # Точка входа для серверного приложения
 │   └── requirements.txt        # Зависимости Python
-├── Frontend/                   # Фронтенд часть приложения (находится в директории `src/`)
-│   ├── public/
-│   ├── src/                        # Исходный код фронтенда
+├── Frondend/
+├── src/                        # Фронтенд часть приложения
 │   │   ├── assets/               # Изображения и иконки приложения
 │   │   ├── components/           # Переиспользуемые UI-компоненты (Button, Header, BottomNav и т.д.)
+│   │   │   ├── BottomNav.js
+│   │   │   ├── Button.js
+│   │   │   ├── Header.js
+│   │   │   ├── HistoryItem.js
+│   │   │   ├── ProPower.js
+│   │   │   └── ScanConfirmationDialog.js
 │   │   ├── screens/              # Экраны/страницы приложения
+│   │   │   ├── DocumentDetailScreen.js
+│   │   │   ├── EditProfileScreen.js
+│   │   │   ├── HistoryScreen.js
+│   │   │   ├── ScanResultScreen.js
+│   │   │   └── SettingsScreen.js
 │   │   ├── styles/               # CSS-стили для компонентов и экранов
 │   │   ├── App.js                # Главный компонент приложения, маршрутизация
 │   │   └── index.js              # Точка входа в приложение
-│   ├── .gitignore                # Файл для игнорирования Git
-│   ├── package.json              # Метаданные проекта и зависимости фронтенда
-│   └── package-lock.json         # Зафиксированные версии зависимостей фронтенда
-├── README.md                 # Этот файл
 
 ```
 
